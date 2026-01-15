@@ -1,5 +1,5 @@
 import Title from "../atoms/Title";
-import Button from "../atoms/Button";
+import IconButton from "../molecules/IconButton";
 
 export default function Sidebar() {
   const action = () => {
@@ -12,7 +12,7 @@ export default function Sidebar() {
         <Title title="Pdf converter" />
       </div>
       <div>
-        <Button onClick={action}>Hello</Button>
+        <IconButton text="Convetir" icon="PDF" onClick={action} />
       </div>
     </section>
   );
