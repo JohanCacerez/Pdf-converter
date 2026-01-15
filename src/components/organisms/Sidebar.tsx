@@ -1,5 +1,5 @@
 import Title from "../atoms/Title";
-import IconButton from "../molecules/IconButton";
+import IconButtonLink from "../molecules/IconButtonLink";
 
 export default function Sidebar() {
   const action = () => {
@@ -12,7 +12,7 @@ export default function Sidebar() {
         <Title title="Pdf converter" />
       </div>
       <div>
-        <IconButton text="Convetir" icon="PDF" onClick={action} />
+        <IconButtonLink text="Inicio" icon="House" onClick={action} />
       </div>
     </section>
   );
