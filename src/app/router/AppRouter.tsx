@@ -4,6 +4,7 @@ import MainLayout from "../../components/templates/MainLayout/MainLayout";
 
 import HomePage from "../../pages/HomePage";
 import SettingsPage from "../../pages/SettingsPage";
+import DocumentsPage from "../../pages/DocumentsPage";
 
 export default function AppRouter() {
   return (
@@ -11,7 +12,7 @@ export default function AppRouter() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/documents" element={<SettingsPage />} />
+          <Route path="/documents" element={<DocumentsPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Route>
       </Routes>

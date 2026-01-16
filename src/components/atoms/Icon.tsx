@@ -1,10 +1,11 @@
 import { IconType } from "react-icons";
 import { HiFolder } from "react-icons/hi";
-import { MdAutoFixHigh } from "react-icons/md";
+import { MdAutoFixHigh, MdOutlineSettings } from "react-icons/md";
 
 const iconMap = {
   Folder: HiFolder,
   Trick: MdAutoFixHigh,
+  Settings: MdOutlineSettings,
 };
 
 export type IconName = keyof typeof iconMap;

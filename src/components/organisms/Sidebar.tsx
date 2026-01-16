@@ -24,7 +24,7 @@ export default function Sidebar() {
 
       <IconButtonLink
         text="Archivos"
-        icon="Folder"
+        icon="Settings"
         onClick={() => navigate("/settings")}
       />
     </section>
