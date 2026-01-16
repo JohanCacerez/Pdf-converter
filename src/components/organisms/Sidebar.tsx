@@ -8,12 +8,11 @@ export default function Sidebar() {
 
   return (
     <section>
-      <div>
-        <Title title="Pdf converter" />
-      </div>
-      <div>
-        <IconButtonLink text="Inicio" icon="House" onClick={action} />
-      </div>
+      <Title title="Pdf converter" />
+
+      <IconButtonLink text="Convertir" icon="Trick" onClick={action} />
+
+      <IconButtonLink text="Archivos" icon="Folder" onClick={action} />
     </section>
   );
 }

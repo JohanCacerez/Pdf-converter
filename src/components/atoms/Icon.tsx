@@ -1,13 +1,22 @@
-import { icons, LucideProps } from "lucide-react";
+import { IconType } from "react-icons";
+import { HiFolder } from "react-icons/hi";
+import { MdAutoFixHigh } from "react-icons/md";
 
-export type IconName = keyof typeof icons;
+const iconMap = {
+  Folder: HiFolder,
+  Trick: MdAutoFixHigh,
+};
 
-interface IconProps extends LucideProps {
+export type IconName = keyof typeof iconMap;
+
+type IconProps = {
   name: IconName;
-}
+  size?: number;
+  className?: string;
+};
 
-export default function Icon({ name, ...props }: IconProps) {
-  const LucideIcon = icons[name];
+export default function Icon({ name, size = 24, className }: IconProps) {
+  const SelectedIcon: IconType = iconMap[name];
 
-  return <LucideIcon {...props} />;
+  return <SelectedIcon size={size} className={className} />;
 }
