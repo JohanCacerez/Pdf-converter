@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Sidebar from "../../organisms/Sidebar";
 
 export default function MainLayout() {
@@ -7,7 +8,9 @@ export default function MainLayout() {
         <Sidebar />
       </aside>
 
-      <main style={{ flex: 1 }}>{/* contenido */}</main>
+      <main style={{ flex: 1 }}>
+        <Outlet />
+      </main>
     </div>
   );
 }

@@ -11,6 +11,7 @@ export default function AppRouter() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
+          <Route path="/documents" element={<SettingsPage />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Route>
       </Routes>
